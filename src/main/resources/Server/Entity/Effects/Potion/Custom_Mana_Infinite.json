@@ -1,0 +1,19 @@
+{
+  "$Comment": "Efecto de maná infinito durante 10 segundos",
+  "StatModifiers": {
+    "Mana": 1000.0,
+    "SignatureEnergy": 1000.0
+  },
+  "DamageCalculatorCooldown": 0.1,
+  "Duration": 10.0,
+  "OverlapBehavior": "Overwrite",
+  "StatusEffectIcon": "Icons/ItemsGenerated/Potion_Mana_Custom.png",
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Potion_Signature_Burst"
+      }
+    ],
+    "WorldSoundEventId": "SFX_Potion_Drink_Success"
+  }
+}

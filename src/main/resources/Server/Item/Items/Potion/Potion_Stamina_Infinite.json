@@ -1,0 +1,56 @@
+{
+  "Parent": "Potion_Template",
+  "TranslationProperties": {
+    "Name": "Poción de Stamina Infinita",
+    "Description": "Otorga stamina infinita durante 10 segundos."
+  },
+  "Quality": "Legendary",
+  "Icon": "Icons/ItemsGenerated/Potion_Stamina_Custom.png",
+  "MaxStack": 10,
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Custom_Stamina_Infinite"
+        }
+      ]
+    }
+  },
+  "BlockType": {
+    "CustomModel": "Items/Potion_Stamina_Super/model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Potion_Stamina_Super/texture.png",
+        "Weight": 1
+      }
+    ],
+    "BlockParticleSetId": "GlassMagic",
+    "ParticleColor": "#fdd540",
+    "Light": {
+      "Color": "#431"
+    }
+  },
+  "Recipe": {
+    "TimeSeconds": 2.0,
+    "Input": [
+      {
+        "ItemId": "Potion_Empty",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Plant_Crop_Stamina2",
+        "Quantity": 2
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Alchemybench",
+        "Type": "Crafting",
+        "Categories": [
+          "Alchemy_Potions"
+        ]
+      }
+    ]
+  }
+}

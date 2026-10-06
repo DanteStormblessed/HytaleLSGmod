@@ -10,6 +10,10 @@ tasks.withType<Javadoc>().configureEach {
     (options as org.gradle.external.javadoc.StandardJavadocDocletOptions).addStringOption("Xdoclint:-missing", "-quiet")
 }
 
+tasks.withType<JavaCompile>().configureEach {
+    options.encoding = "UTF-8"
+}
+
 group = project.property("group").toString()
 
 java {
@@ -45,6 +49,8 @@ tasks.named<Jar>("jar") {
     archiveBaseName.set(project.property("mod_name").toString())
     archiveVersion.set(project.property("version").toString())
 }
+
+
 
 // Uncomment if you are using IntelliJ.
 // idea {

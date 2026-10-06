@@ -1,16 +1,16 @@
 {
     "Group": "HytaleModding",
-    "Name": "ExamplePlugin",
-    "Version": "0.0.0",
-    "Description": "Description of your plugin",
+    "Name": "LsgPlugin",
+    "Version": "0.0.1",
+    "Description": "LifeSyncGames Plugin - Claim rewards by doing real life activities",
     "Authors": [
         {
-            "Name": "Your_Name",
-            "Email": "your.email@example.com",
-            "Url": "https://your-website.com"
+            "Name": "DanteStormblessed",
+            "Email": "[EMAIL_ADDRESS]",
+            "Url": "https://www.youtube.com/@DanteStormblessed"
         }
     ],
-    "Website": "https://your-plugin-website.com",
+    "Website": "https://www.youtube.com/@DanteStormblessed",
     "DisabledByDefault": false,
     "IncludesAssetPack": true,
     "Dependencies": {
@@ -19,8 +19,8 @@
     "OptionalDependencies": {
         
     },
-    "ServerVersion": ">=0.5.3 <0.6.0",
-    "Main": "dev.hytalemodding.ExamplePlugin",
+    "ServerVersion": "*",
+    "Main": "dev.hytalemodding.LsgPlugin",
     "UpdateChecker": {
         "CurseForge": ""
     }

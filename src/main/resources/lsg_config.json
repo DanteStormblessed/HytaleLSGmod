@@ -1,0 +1,5 @@
+{
+  "EnableWelcomeMessage": true,
+  "AuthUrl": "http://localhost:8001",
+  "CoreApiUrl": "http://localhost:8012"
+}

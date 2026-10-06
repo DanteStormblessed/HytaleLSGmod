@@ -1,0 +1,19 @@
+{
+  "$Comment": "Efecto de vida infinita e invulnerabilidad durante 10 segundos",
+  "Invulnerable": true,
+  "StatModifiers": {
+    "Health": 1000.0
+  },
+  "DamageCalculatorCooldown": 0.1,
+  "Duration": 10.0,
+  "OverlapBehavior": "Overwrite",
+  "StatusEffectIcon": "Icons/ItemsGenerated/Potion_Health_Custom.png",
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Potion_Health_Heal"
+      }
+    ],
+    "WorldSoundEventId": "SFX_Potion_Drink_Success"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$Comment": "Efecto de stamina infinita durante 10 segundos",
+  "StatModifiers": {
+    "Stamina": 1000.0
+  },
+  "DamageCalculatorCooldown": 0.1,
+  "Duration": 10.0,
+  "OverlapBehavior": "Overwrite",
+  "StatusEffectIcon": "Icons/ItemsGenerated/Potion_Stamina_Custom.png",
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Potion_Stamina_Burst"
+      }
+    ],
+    "WorldSoundEventId": "SFX_Stamina_Potion_Success"
+  }
+}

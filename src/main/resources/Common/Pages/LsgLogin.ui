@@ -1,0 +1,81 @@
+$C = "../Common.ui";
+
+$C.@PageOverlay #LoginPage {
+  LayoutMode: Middle;
+
+  $C.@DecoratedContainer {
+    @CloseButton = true;
+    Anchor: (Width: 480, Height: 440);
+
+    #Title {
+      $C.@Title {
+        @Text = "LifeSync-Games";
+      }
+    }
+
+    #Content {
+      LayoutMode: Top;
+      Padding: (Full: 20);
+
+      Label #SubtitleLabel {
+        Anchor: (Height: 20, Bottom: 12);
+        Text: "Inicia sesion para sincronizar tus puntos";
+        Style: (FontSize: 13, TextColor: #96a9be, HorizontalAlignment: Center);
+      }
+
+      $C.@ContentSeparator {
+        @Anchor = (Bottom: 14);
+      }
+
+      Label #UsernameLabel {
+        Anchor: (Height: 20, Bottom: 4);
+        Text: "Correo institucional / Usuario:";
+        Style: (FontSize: 13, TextColor: #e3fffc, RenderBold: true);
+      }
+
+      TextField #UsernameField {
+        Anchor: (Height: 38, Bottom: 12);
+        Background: $C.@InputBoxBackground;
+        Style: (...$C.@DefaultInputFieldStyle, FontSize: 14, TextColor: #d6e4ee);
+        Padding: (Horizontal: 10);
+      }
+
+      Label #PasswordLabel {
+        Anchor: (Height: 20, Bottom: 4);
+        Text: "Contrasena:";
+        Style: (FontSize: 13, TextColor: #e3fffc, RenderBold: true);
+      }
+
+      TextField #PasswordField {
+        Anchor: (Height: 38, Bottom: 12);
+        Background: $C.@InputBoxBackground;
+        Style: (...$C.@DefaultInputFieldStyle, FontSize: 14, TextColor: #d6e4ee);
+        Padding: (Horizontal: 10);
+        PasswordChar: "*";
+      }
+
+      Label #StatusLabel {
+        Anchor: (Height: 22, Bottom: 12);
+        Text: "";
+        Style: (FontSize: 12, TextColor: #e8a93b, HorizontalAlignment: Center);
+      }
+
+      Group #ButtonGroup {
+        Anchor: (Height: 44);
+        LayoutMode: Left;
+
+        $C.@TextButton #LoginButton {
+          @Anchor = (Right: 6);
+          FlexWeight: 1;
+          Text: "Iniciar Sesion";
+        }
+
+        $C.@SecondaryTextButton #CancelButton {
+          @Anchor = (Left: 6);
+          FlexWeight: 1;
+          Text: "Cancelar";
+        }
+      }
+    }
+  }
+}

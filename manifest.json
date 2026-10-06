@@ -1,0 +1,27 @@
+{
+    "Group": "HytaleModding",
+    "Name": "LsgPlugin",
+    "Version": "0.0.1",
+    "Description": "LifeSyncGames Plugin - Claim rewards by doing real life activities",
+    "Authors": [
+        {
+            "Name": "DanteStormblessed",
+            "Email": "[EMAIL_ADDRESS]",
+            "Url": "https://www.youtube.com/@DanteStormblessed"
+        }
+    ],
+    "Website": "https://www.youtube.com/@DanteStormblessed",
+    "DisabledByDefault": false,
+    "IncludesAssetPack": true,
+    "Dependencies": {
+        "Hytale:AssetModule": "*"
+    },
+    "OptionalDependencies": {
+        
+    },
+    "ServerVersion": "*",
+    "Main": "dev.hytalemodding.LsgPlugin",
+    "UpdateChecker": {
+        "CurseForge": ""
+    }
+}
